@@ -1,0 +1,124 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A1F44;
+    color: white;
+    margin: 0;
+}
+
+/* Cabecera */
+header {
+    background-color: #003366;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+header .logo h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenedor de las marcas */
+.brand-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.brand-card {
+    background-color: #003366;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+}
+
+.brand-card h2 {
+    font-size: 24px;
+}
+
+.brand-card a {
+    display: block;
+    margin-top: 15px;
+    color: #0066CC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos del catálogo */
+.catalog-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #1A3E67;
+    border-radius: 8px;
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.car-card {
+    background-color: #1E2A47;
+    width: 250px;
+    margin: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.car-card p {
+    margin: 10px 0;
+}
+
+.car-card button {
+    background-color: #0066CC;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.car-card button:hover {
+    background-color: #004C99;
+}
+
+/* Efecto 3D al pasar el mouse sobre los autos */
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
